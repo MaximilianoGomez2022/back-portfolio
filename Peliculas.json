@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "63895dfddc67f1b7b2585827"
+  },
+  "name": "Terminator 2",
+  "genero": "accion",
+  "destacada": true,
+  "anio": 1992,
+  "img": "term-01.png"
+},{
+  "_id": {
+    "$oid": "63895e27dc67f1b7b2585828"
+  },
+  "name": "Gladiator",
+  "genero": "Acción",
+  "destacada": true,
+  "anio": "2001",
+  "img": "gladiator-01.png"
+},{
+  "_id": {
+    "$oid": "63895e62dc67f1b7b2585829"
+  },
+  "name": "Avengers",
+  "genero": "Ciencia Ficción",
+  "destacada": true,
+  "anio": 2018,
+  "img": "avengers-01.png"
+},{
+  "_id": {
+    "$oid": "638e7a20acb156d92332d198"
+  },
+  "name": "Charlie",
+  "genero": "Infantil",
+  "anio": 2013,
+  "destacada": false,
+  "img": "charlie.jpg"
+},{
+  "_id": {
+    "$oid": "638e7ac3acb156d92332d199"
+  },
+  "name": "Venom",
+  "genero": "Ciencia Ficción",
+  "anio": 2019,
+  "destacada": false,
+  "img": "venom.jpeg"
+},{
+  "_id": {
+    "$oid": "638e7bf0acb156d92332d19a"
+  },
+  "name": "Doctor Sleep",
+  "genero": "Terror",
+  "anio": 206,
+  "destacada": false,
+  "img": "doc.jpg"
+},{
+  "_id": {
+    "$oid": "638e7d69acb156d92332d19c"
+  },
+  "name": "Godzilla",
+  "genero": "Drama",
+  "anio": 2012,
+  "destacada": false,
+  "img": "god.jpg"
+},{
+  "_id": {
+    "$oid": "638f875ba8dc10c85adf2304"
+  },
+  "name": "prueba",
+  "genero": "Drama",
+  "anio": 2012,
+  "destacada": false,
+  "img": "prueba.jpg"
+}]

@@ -1,10 +1,10 @@
 import { MongoClient, ObjectId} from "mongodb"
-const client = new MongoClient('mongodb://127.0.0.1:27017')
+const client = new MongoClient('mongodb+srv://portfolio2023:Riverplate_SAG_1991@cluster0.ghun0gd.mongodb.net/?retryWrites=true&w=majority')
 
 async function traerDestacadas(){
     return client.connect()
     .then(function(){
-        const db = client.db('AH_P3')
+        const db = client.db('Portfolio2023')
         return db.collection('Peliculas').find({destacada:true}).toArray()
     })
     .catch(function(err){
@@ -24,7 +24,7 @@ async function traerPeliculas(filter){
 
     return client.connect()
     .then(async function(){
-        const db = client.db('AH_P3')
+        const db = client.db('Portfolio2023')
         return db.collection('Peliculas').find(filterQuery).toArray()
     })
 }
@@ -32,7 +32,7 @@ async function traerPeliculas(filter){
 async function traerPorId(id){
     return client.connect()
     .then(function(){
-        const db = client.db('AH_P3')
+        const db = client.db('Portfolio2023')
         return db.collection('Peliculas').findOne({ _id: new ObjectId(id) })
     })
 }
@@ -43,7 +43,7 @@ async function guardarPelicula(pelicula){
     }
     return client.connect()
     .then(function(){
-        const db = client.db('AH_P3')
+        const db = client.db('Portfolio2023')
         return db.collection('Peliculas').insertOne(nuevaPelicula)
     })
     .then(function(){
@@ -54,7 +54,7 @@ async function guardarPelicula(pelicula){
 async function editarPelicula(id, pelicula){
     return client.connect()
     .then(function(){
-        const db = client.db('AH_P3')
+        const db = client.db('Portfolio2023')
         return db.collection('Peliculas').updateOne({_id: new ObjectId(id)}, {$set:pelicula})
     })
 }
@@ -62,7 +62,7 @@ async function editarPelicula(id, pelicula){
 async function reemplazarPelicula(id, pelicula){
     return client.connect()
     .then(function(){
-        const db = client.db('AH_P3')
+        const db = client.db('Portfolio2023')
         return db.collection('Peliculas').replaceOne({_id: new ObjectId(id)},pelicula)
     })
 }
@@ -70,7 +70,7 @@ async function reemplazarPelicula(id, pelicula){
 async function eliminarPelicula(id){
     return client.connect()
     .then(function(){
-        const db = client.db('AH_P3')
+        const db = client.db('Portfolio2023')
         return db.collection('Peliculas').deleteOne({_id: new ObjectId(id)})
     })
 }
