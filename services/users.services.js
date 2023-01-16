@@ -1,8 +1,9 @@
 import { MongoClient, ObjectId } from "mongodb"
 import bcrypt from 'bcrypt'
 
-const client = new MongoClient('mongodb://127.0.0.1:27017')
-const db = client.db('AH_P3')
+const client = new MongoClient('mongodb+srv://portfolio2023:Riverplate_SAG_1991@cluster0.ghun0gd.mongodb.net/?retryWrites=true&w=majority')
+
+const db = client.db('Portfolio2023')
 const users = db.collection('users')
 
 async function login(userLogin){

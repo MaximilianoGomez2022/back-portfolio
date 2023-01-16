@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "6389fb7107db99c40eded90f"
+  },
+  "name": "Acción"
+},{
+  "_id": {
+    "$oid": "6389fbf907db99c40eded910"
+  },
+  "name": "Ciencia Ficción"
+},{
+  "_id": {
+    "$oid": "6389fc0007db99c40eded911"
+  },
+  "name": "Drama"
+},{
+  "_id": {
+    "$oid": "6389fc0707db99c40eded912"
+  },
+  "name": "Comedia"
+},{
+  "_id": {
+    "$oid": "638a011a83f0180c27326e68"
+  },
+  "name": "infantil"
+}]
